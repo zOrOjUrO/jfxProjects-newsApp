@@ -57,7 +57,7 @@ public class NewsRecords {
     static String currentTopic;
     static int currentSelectedIndex;
 
-    static final String API_KEY = "bd3de8ed95msh38e84a05aa68ab4p1daa04jsn3946f8db5b61"; //API KEY
+    static final String API_KEY = " "; //API KEY
 
     NewsRecords(){
         topCycle = 1;
