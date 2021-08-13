@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: f3d7ff;" stylesheets="@../style/loadStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.loadController">
+   <Label id="title" alignment="CENTER" layoutX="575.0" layoutY="173.0" prefHeight="41.0" prefWidth="194.0" text="BLITZ" AnchorPane.bottomAnchor="394.4" AnchorPane.leftAnchor="575.0" AnchorPane.rightAnchor="596.6" AnchorPane.topAnchor="300.0">
+      <font>
+         <Font size="50.0" />
+      </font>
+   </Label>
+   <Label id="sub" alignment="CENTER" layoutX="440.0" layoutY="469.0" minHeight="30.0" minWidth="288.0" text="Your one stop destination for news" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="233.39999999999998" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="462.0" AnchorPane.topAnchor="469.0">
+      <font>
+         <Font name="System Italic" size="22.0" />
+      </font>
+   </Label>
+   <ProgressBar fx:id="loadBar" layoutX="531.0" layoutY="483.0" prefHeight="5.0" prefWidth="300.0" progress="0.25" AnchorPane.bottomAnchor="227.4" AnchorPane.leftAnchor="525.0" AnchorPane.rightAnchor="541.0" />
+   <ImageView fx:id="playButton" fitHeight="96.0" fitWidth="96.0" layoutX="583.0" layoutY="573.0" onMouseClicked="#switchToMainScreen" opacity="0.9" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="625.0" AnchorPane.rightAnchor="645.2209930419922">
+      <Image url="@../images/playButton.png" />
+   </ImageView>
+</AnchorPane>

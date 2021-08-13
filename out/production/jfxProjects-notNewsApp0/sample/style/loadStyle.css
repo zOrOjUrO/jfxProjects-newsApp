@@ -1,0 +1,34 @@
+@font-face {
+src: url(OpenSansCondensedLight.ttf);
+}
+
+.label{
+    -fx-font-family: "Open Sans Condensed Light";
+    -fx-text-fill: "#f15a24";
+}
+
+#title{
+    -fx-font-size: 50;
+}
+
+#sub{
+    -fx-font-size: 18;
+}
+
+.progress-bar {
+    -fx-accent: "#f15a24";
+}
+
+.progress-bar .bar {
+    -fx-padding: 1px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 15;
+}
+
+.progress-bar> .track {
+     -fx-border-radius: 15;
+     -fx-background-radius: 15;
+     -fx-text-box-border: transparent;
+     -fx-control-inner-background: transparent;
+     -fx-background-color: rgba(241, 90, 36, 0.15);
+}

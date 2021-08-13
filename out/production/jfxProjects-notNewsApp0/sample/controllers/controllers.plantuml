@@ -1,0 +1,168 @@
+@startuml
+
+title __CONTROLLERS's Class Diagram__\n
+
+  namespace sample {
+    namespace controllers {
+      class sample.controllers.NewsRecords {
+          {static} ~ currentSelectedIndex : int
+          {static} ~ currentTopic : String
+          {static} ~ scienceCycle : int
+          {static} ~ scienceLinks : ArrayList<String>
+          {static} ~ sciencePictures : ArrayList<Image>
+          {static} ~ scienceSummary : ArrayList<String>
+          {static} ~ scienceTitles : ArrayList<String>
+          {static} ~ searchCycle : int
+          {static} ~ searchLinks : ArrayList<String>
+          {static} ~ searchPictures : ArrayList<Image>
+          {static} ~ searchSummary : ArrayList<String>
+          {static} ~ searchTerm : String
+          {static} ~ searchTitles : ArrayList<String>
+          {static} ~ sportCycle : int
+          {static} ~ sportLinks : ArrayList<String>
+          {static} ~ sportPictures : ArrayList<Image>
+          {static} ~ sportSummary : ArrayList<String>
+          {static} ~ sportTitles : ArrayList<String>
+          {static} ~ techCycle : int
+          {static} ~ techLinks : ArrayList<String>
+          {static} ~ techPictures : ArrayList<Image>
+          {static} ~ techSummary : ArrayList<String>
+          {static} ~ techTitles : ArrayList<String>
+          {static} ~ topCycle : int
+          {static} ~ topLinks : ArrayList<String>
+          {static} ~ topPictures : ArrayList<Image>
+          {static} ~ topSummary : ArrayList<String>
+          {static} ~ topTitles : ArrayList<String>
+          {static} ~ travelCycle : int
+          {static} ~ travelLinks : ArrayList<String>
+          {static} ~ travelPictures : ArrayList<Image>
+          {static} ~ travelSummary : ArrayList<String>
+          {static} ~ travelTitles : ArrayList<String>
+          + fetchAllStories()
+          {static} + fetchNext()
+          {static} + fetchScienceStories()
+          {static} + fetchSearch()
+          {static} + fetchSportStories()
+          {static} + fetchTechStories()
+          {static} + fetchTopStories()
+          {static} + fetchTravelStories()
+          {static} + getRecordsSize()
+          ~ NewsRecords()
+          {static} - clearTopicData()
+          {static} - getScienceField()
+          {static} - getSearchContentFromBody()
+          {static} - getSportField()
+          {static} - getTechField()
+          {static} - getTopContentFromBody()
+          {static} - getTopicContentFromBody()
+          {static} - getTravelField()
+          {static} - getURL()
+          {static} - searchStoryByTerm()
+          {static} - showTopicContent()
+      }
+    }
+  }
+  
+
+  namespace sample {
+    namespace controllers {
+      class sample.controllers.homeScreenController {
+          + currentTopic : String
+          + scienceNews : Button
+          + searchBar : TextField
+          + sportsNews : Button
+          + storyBrief1 : Label
+          + storyBrief2 : Label
+          + storyBrief3 : Label
+          + storyBrief4 : Label
+          + storyBrief5 : Label
+          + storyBriefs : ArrayList<Label>
+          + storyHead1 : Label
+          + storyHead2 : Label
+          + storyHead3 : Label
+          + storyHead4 : Label
+          + storyHead5 : Label
+          + storyHeads : ArrayList<Label>
+          + storyImage1 : ImageView
+          + storyImage2 : ImageView
+          + storyImage3 : ImageView
+          + storyImage4 : ImageView
+          + storyImage5 : ImageView
+          + storyMedia : ArrayList<ImageView>
+          + techNews : Button
+          + topNews : Button
+          + travelNews : Button
+          - root : Parent
+          - scene : Scene
+          - stage : Stage
+          + closeApp()
+          + fetchMore()
+          + initialize()
+          + showScienceNews()
+          + showSearch()
+          + showSportsNews()
+          + showStory1()
+          + showStory2()
+          + showStory3()
+          + showStory4()
+          + showStory5()
+          + showTechNews()
+          + showTopNews()
+          + showTravelNews()
+          + switchToDetailScreen()
+          - gommaConfirmation()
+          - setStoryBriefs()
+          - setStoryHeads()
+          - setStoryMedia()
+      }
+    }
+  }
+  
+
+  namespace sample {
+    namespace controllers {
+      class sample.controllers.loadController {
+          + playButton : ImageView
+          + rootPane : AnchorPane
+          - loadBar : ProgressBar
+          + initialize()
+          + switchToMainScreen()
+          - fetch()
+      }
+    }
+  }
+  
+
+  namespace sample {
+    namespace controllers {
+      class sample.controllers.storyController {
+          + backButton : ImageView
+          + blitzIcon : Label
+          + closeButton : ImageView
+          + storyCard : Label
+          + storyImage : ImageView
+          + storyInfo : Label
+          + storySummary : Label
+          + storyTitle : Label
+          + closeApp()
+          + initialize()
+          + returnToHome()
+      }
+    }
+  }
+  
+
+  sample.controllers.homeScreenController .up.|> javafx.fxml.Initializable
+  sample.controllers.loadController .up.|> javafx.fxml.Initializable
+  sample.controllers.loadController o-- sample.controllers.NewsRecords : stories
+  sample.controllers.storyController .up.|> javafx.fxml.Initializable
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

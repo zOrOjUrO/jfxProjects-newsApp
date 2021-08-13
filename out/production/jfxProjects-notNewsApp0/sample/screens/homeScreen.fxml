@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" opacity="1" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: f3d7ff;" stylesheets="@../style/homeButtonStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.homeScreenController">
+   <children>
+      <VBox fx:id="newsPane" fillWidth="false" layoutX="341.0" layoutY="158.0" prefHeight="558.0" prefWidth="964.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="158.0">
+         <children>
+            <AnchorPane stylesheets="@../style/storiesStyle.css">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="Label1" prefHeight="100.0" prefWidth="963.0" stylesheets="@../style/homeStoriesStyle.css" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="storyImage1" fitHeight="80.0" fitWidth="80.0" layoutX="10.0" opacity="0.9" pickOnBounds="true" preserveRatio="true" translateX="10.0">
+                           <image>
+                              <Image url="@../images/defaultStoryImage.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <VBox layoutX="100.0" layoutY="5.0" onMouseClicked="#showStory1" prefWidth="800.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="8.0">
+                     <children>
+                        <Label fx:id="storyHead1" prefHeight="35.0" prefWidth="765.0" styleClass="story-head" text="Story Head" />
+                        <Label fx:id="storyBrief1" prefHeight="50.0" prefWidth="800.0" styleClass="story" stylesheets="@../style/storiesStyle.css" text="Story Brief" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="100.0" prefWidth="963.0">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="Label2" prefHeight="100.0" prefWidth="963.0" stylesheets="@../style/homeStoriesStyle.css" text="">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="storyImage2" fitHeight="80.0" fitWidth="80.0" opacity="0.9" pickOnBounds="true" preserveRatio="true" translateX="10.0">
+                           <image>
+                              <Image url="@../images/defaultStoryImage.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <VBox layoutX="100.0" layoutY="5.0" onMouseClicked="#showStory2" prefWidth="800.0" stylesheets="@../style/storiesStyle.css" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="8.0">
+                     <children>
+                        <Label fx:id="storyHead2" prefHeight="35.0" prefWidth="765.0" styleClass="story-head" text="Story Head" />
+                        <Label fx:id="storyBrief2" prefHeight="50.0" prefWidth="800.0" styleClass="story" stylesheets="@../style/storiesStyle.css" text="Story Brief" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="Label3" prefHeight="100.0" prefWidth="964.0" stylesheets="@../style/homeStoriesStyle.css" text="">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="storyImage3" fitHeight="80.0" fitWidth="80.0" opacity="0.9" pickOnBounds="true" preserveRatio="true" translateX="10.0">
+                           <image>
+                              <Image url="@../images/defaultStoryImage.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <VBox layoutX="100.0" layoutY="5.0" onMouseClicked="#showStory3" prefWidth="800.0" stylesheets="@../style/storiesStyle.css" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="8.0">
+                     <children>
+                        <Label fx:id="storyHead3" prefHeight="35.0" prefWidth="765.0" styleClass="story-head" text="Story Head" />
+                        <Label fx:id="storyBrief3" prefHeight="50.0" prefWidth="800.0" styleClass="story" stylesheets="@../style/storiesStyle.css" text="Story Brief" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="Label4" prefHeight="100.0" prefWidth="963.0" stylesheets="@../style/homeStoriesStyle.css" text="">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="storyImage4" fitHeight="80.0" fitWidth="80.0" opacity="0.9" pickOnBounds="true" preserveRatio="true" translateX="10.0">
+                           <image>
+                              <Image url="@../images/defaultStoryImage.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <VBox layoutX="100.0" layoutY="5.0" onMouseClicked="#showStory4" prefWidth="800.0" stylesheets="@../style/storiesStyle.css" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="8.0">
+                     <children>
+                        <Label fx:id="storyHead4" prefHeight="35.0" prefWidth="765.0" styleClass="story-head" text="Story Head" />
+                        <Label fx:id="storyBrief4" prefHeight="50.0" prefWidth="800.0" styleClass="story" stylesheets="@../style/storiesStyle.css" text="Story Brief" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="Label5" prefHeight="100.0" prefWidth="963.0" stylesheets="@../style/homeStoriesStyle.css" text="" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="storyImage5" fitHeight="80.0" fitWidth="80.0" opacity="0.9" pickOnBounds="true" preserveRatio="true" translateX="10.0">
+                           <image>
+                              <Image url="@../images/defaultStoryImage.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <VBox layoutX="100.0" layoutY="5.0" onMouseClicked="#showStory5" prefWidth="800.0" stylesheets="@../style/storiesStyle.css" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="8.0">
+                     <children>
+                        <Label fx:id="storyHead5" prefHeight="35.0" prefWidth="765.0" styleClass="story-head" text="Story Head" />
+                        <Label fx:id="storyBrief5" prefHeight="50.0" prefWidth="800.0" styleClass="story" stylesheets="@../style/storiesStyle.css" text="Story Brief" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <VBox prefWidth="800.0" />
+         </children></VBox>
+      <Label fx:id="blitzIcon" alignment="CENTER" layoutX="43.0" layoutY="27.0" prefHeight="41.0" prefWidth="194.0" text="BLITZ" AnchorPane.bottomAnchor="696.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1170.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="50.0" />
+         </font></Label>
+      <TextField fx:id="searchBar" alignment="CENTER" layoutX="341.0" layoutY="68.0" opacity="0.75" prefHeight="59.0" prefWidth="960.0" promptText="Search News" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="64.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="20.0" />
+         </opaqueInsets></TextField>
+      <VBox fx:id="buttonsPane" layoutX="33.0" layoutY="165.0" prefHeight="530.0" prefWidth="202.0" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="1089.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <Button fx:id="topNews" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#showTopNews" prefHeight="70.0" prefWidth="205.0" text="Top News">
+               <VBox.margin>
+                  <Insets bottom="12.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="techNews" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#showTechNews" prefHeight="67.0" prefWidth="205.0" text="Tech">
+               <VBox.margin>
+                  <Insets bottom="12.0" top="35.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="sportsNews" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#showSportsNews" prefHeight="67.0" prefWidth="203.0" text="Sports">
+               <VBox.margin>
+                  <Insets bottom="12.0" top="35.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="travelNews" mnemonicParsing="false" onMouseClicked="#showTravelNews" prefHeight="67.0" prefWidth="205.0" text="Travel">
+               <VBox.margin>
+                  <Insets bottom="12.0" top="35.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="scienceNews" mnemonicParsing="false" onMouseClicked="#showScienceNews" prefHeight="66.0" prefWidth="204.0" text="Science">
+               <VBox.margin>
+                  <Insets top="35.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fx:id="searchIcon" fitHeight="40.0" fitWidth="40.0" layoutX="359.0" layoutY="69.0" onMouseClicked="#showSearch" opacity="0.75" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="656.0" AnchorPane.leftAnchor="356.0" AnchorPane.rightAnchor="970.2121658325195" AnchorPane.topAnchor="72.0">
+         <image>
+            <Image url="@../images/searchIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="close" fitHeight="58.0" fitWidth="58.0" layoutX="1312.0" layoutY="14.0" onMouseClicked="#closeApp" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="700.0" AnchorPane.leftAnchor="1298.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <image>
+            <Image url="@../images/closeIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button id="load" fx:id="loadMore" mnemonicParsing="false" onMouseClicked="#fetchMore" prefHeight="4.0" prefWidth="128.0" text="Load More" AnchorPane.leftAnchor="1172.0" AnchorPane.topAnchor="764.0" />
+   </children>
+</AnchorPane>

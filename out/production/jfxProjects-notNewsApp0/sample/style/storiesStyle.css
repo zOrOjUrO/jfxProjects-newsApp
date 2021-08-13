@@ -1,0 +1,16 @@
+@font-face {
+src: url(OpenSansCondensedLight.ttf);
+}
+
+.story-head{
+    -fx-font-family: "Open Sans Condensed Bold";
+    -fx-font-weight: bold;
+    -fx-text-fill: "#4d4d4d";
+    -fx-font-size: 19;
+}
+
+.story{
+    -fx-font-family: "Open Sans Condensed Light";
+    -fx-text-fill: "#4d4d4d";
+    -fx-font-size: 22;
+}

@@ -1,0 +1,29 @@
+@font-face {
+src: url(OpenSansCondensedLight.ttf);
+}
+
+.root{
+    -fx-font-family: "Open Sans Condensed Light";
+}
+
+.label{
+    -fx-font-family: "Open Sans Condensed Light";
+    -fx-text-fill: "#f15a24";
+}
+
+.button {
+    -fx-font-size: 30;
+    -fx-background-radius: 15;
+    -fx-background-color: rgba(241, 90, 36, 0.15);
+    -fx-text-fill: "#4d4d4d";
+}
+
+#load{
+    -fx-font-size: 12;
+}
+
+.text-field {
+    -fx-background-color: rgba(241, 90, 36, 0.15);
+    -fx-background-radius: 12;
+    -fx-text-fill: "#4d4d4d";
+}

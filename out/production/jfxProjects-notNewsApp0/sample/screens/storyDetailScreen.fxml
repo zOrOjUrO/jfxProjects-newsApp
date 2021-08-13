@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" opacity="1" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: f3d7ff;" stylesheets="@../style/homeButtonStyle.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.storyController">
+    <children>
+        <Label fx:id="blitzIcon" alignment="CENTER" layoutX="43.0" layoutY="27.0" prefHeight="41.0" prefWidth="194.0" text="BLITZ" AnchorPane.bottomAnchor="696.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1170.0" AnchorPane.topAnchor="0.0">
+            <font>
+                <Font size="50.0" />
+            </font></Label>
+        <ImageView fx:id="closeButton" fitHeight="58.0" fitWidth="58.0" layoutX="1312.0" layoutY="14.0" onMouseClicked="#closeApp" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="700.0" AnchorPane.leftAnchor="1298.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <image>
+                <Image url="@../images/closeIcon.png" />
+            </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </ImageView>
+      <ImageView fx:id="backButton" fitHeight="58.0" fitWidth="58.0" layoutX="1225.0" layoutY="10.0" onMouseClicked="#returnToHome" opacity="0.9" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="700.0" AnchorPane.leftAnchor="1224.6" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="10.0">
+         <image>
+            <Image url="@../images/backArrowOrange.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane layoutX="188.0" layoutY="108.0" maxHeight="600.0" prefHeight="600.0" prefWidth="1045.0" stylesheets="@../style/storyDetailStyle.css" AnchorPane.leftAnchor="188.0" AnchorPane.topAnchor="108.0">
+         <children>
+            <Label fx:id="storyCard" prefHeight="600.0" prefWidth="1045.0" stylesheets="@../style/homeStoriesStyle.css" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox layoutX="32.0" layoutY="32.0" prefHeight="250.0" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="32.0">
+               <children>
+                  <ImageView fx:id="storyImage" fitHeight="250.0" fitWidth="290.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/defaultStoryImage.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="storyTitle" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="230.0" prefWidth="620.0" styleClass="story-head" stylesheets="@../style/storyDetailStyle.css" text="Story Title" textAlignment="CENTER" translateX="25.0" translateY="5.0" wrapText="true">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox layoutX="32.0" layoutY="302.0">
+               <children>
+                  <Label fx:id="storySummary" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="140.0" prefWidth="926.0" styleClass="story" stylesheets="@../style/storyDetailStyle.css" text="Story Summary" translateX="10.0" translateY="5.0" wrapText="true">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label fx:id="storyInfo" prefHeight="45.0" prefWidth="926.0" styleClass="story" stylesheets="@../style/storyDetailStyle.css" text="Topic Tags: " wrapText="true" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
